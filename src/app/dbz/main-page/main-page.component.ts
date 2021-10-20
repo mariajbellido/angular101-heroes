@@ -1,4 +1,4 @@
-import { keyframes } from '@angular/animations';
+
 import { Component } from '@angular/core';
 
 interface Personaje {
@@ -41,7 +41,15 @@ export class MainPageComponent{
       return;
     }
 
-    console.log(this.nuevo)
+    console.log(this.nuevo);
+
+    this.personajes.push(this.nuevo);
+
+    this.nuevo = {
+      nombre: '',
+      poder: 0
+    }
+
   }
 
   
