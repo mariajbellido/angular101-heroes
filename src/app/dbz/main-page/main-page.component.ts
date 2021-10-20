@@ -14,21 +14,14 @@ import { DbzService } from '../services/dbz.service';
 
 export class MainPageComponent{
 
-
+  // Valor por defecto
   nuevo: Personaje = {
     nombre: "Maestro Roshi",
     poder: 1000
   }
 
-  get personajes():Personaje[] {
-    return this.dbzService.personajes;
-  }
-  
-  agregarNuevoPersonaje( personaje: Personaje) {
-    this.personajes.push(personaje)
-  }
 
-  constructor( private dbzService: DbzService ) {
+  constructor( ) {
     
   }
 }
