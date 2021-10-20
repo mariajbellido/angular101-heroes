@@ -21,10 +21,11 @@ export class DbzService {
     return [...this._personajes];
   }
 
+  constructor() {
+    
+  }
 
-
-
-    constructor() {
-      console.log("Servicio Inicializado");
-    }
+  agregarPersonaje(personaje: Personaje) {
+    this._personajes.push( personaje )
+  }
 }
