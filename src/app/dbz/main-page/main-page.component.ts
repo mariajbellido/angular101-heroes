@@ -30,4 +30,7 @@ export class MainPageComponent{
     poder: 1000
   }
   
+  agregarNuevoPersonaje( personaje: Personaje) {
+    this.personajes.push(personaje)
+  }
 }
